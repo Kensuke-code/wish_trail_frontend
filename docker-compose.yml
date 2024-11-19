@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  front:
+    build:
+      context: .
+      args:
+        WORKDIR: app
+    command: yarn run dev # Dockerfileは本番環境も共有のためCMDでは設定できない
+    volumes:
+      - ".:/app"
+    ports:
+      - "8080:3000"
+    
