@@ -8,3 +8,5 @@ ENV HOME=/${WORKDIR} \
     HOST=0.0.0.0
 
 WORKDIR ${WORKDIR}
+
+# komentå
